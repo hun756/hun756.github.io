@@ -1,0 +1,112 @@
+\hypertarget{array_8hpp_source}{}\doxysection{array.\+hpp}
+\label{array_8hpp_source}\index{include/array.hpp@{include/array.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{comment}{/* Include guard of :  ARRAY\_HPP */}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#ifndef ARRAY\_HPP}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define ARRAY\_HPP}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 }
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <initializer\_list>}                 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <cstddef>}                          }
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include "{}dependencies/array\_iterator.hpp"{}}  }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <array>}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_d_sin_cpp}{DSinCpp}}}
+\DoxyCodeLine{24 \{}
+\DoxyCodeLine{25     \textcolor{keyword}{template} <\textcolor{keyword}{class} T, \textcolor{keywordtype}{size\_t} MaxSize>}
+\DoxyCodeLine{26     \textcolor{keyword}{class }\mbox{\hyperlink{class_d_sin_cpp_1_1_array}{Array}}}
+\DoxyCodeLine{27     \{}
+\DoxyCodeLine{28     \textcolor{keyword}{public}:}
+\DoxyCodeLine{29         \textcolor{keyword}{using} const\_iterator            =   ConstIterator<T, MaxSize>;}
+\DoxyCodeLine{30         \textcolor{keyword}{using} iterator                  =   Iterator<T, MaxSize>;}
+\DoxyCodeLine{31         \textcolor{keyword}{using} reverse\_iterator          =   ReverseIterator<T, MaxSize>;}
+\DoxyCodeLine{32         \textcolor{keyword}{using} const\_reverse\_iterator    =   ConstReverseIterator<T, MaxSize>;}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \textcolor{keyword}{public}:}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{40         \mbox{\hyperlink{class_d_sin_cpp_1_1_array_ae88ff318626df3d72a520453e8500e24}{Array}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 }
+\DoxyCodeLine{50         \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a495befe5ae48c79cfcdfef6e9e6b49ca}{Array}}(std::initializer\_list<T>);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53         \textcolor{keyword}{friend} \textcolor{keywordtype}{bool} operator ==(\textcolor{keyword}{const} \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{Array<T, MaxSize>}}\& lhs, \textcolor{keyword}{const} \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{Array<T, MaxSize>}}\& rhs);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 }
+\DoxyCodeLine{66         [[nodiscard]] \textcolor{keyword}{const} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a70bcf130a6abd0d1256d6f66c974e8bf}{empty}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 }
+\DoxyCodeLine{79         [[nodiscard]] \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_d_sin_cpp_1_1_array_ad90a1ee756b7a465f9ccfa1f7710f13d}{size}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81 }
+\DoxyCodeLine{90         [[nodiscard]] \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a974eb819607e55398a485bea7dd7b334}{maxSize}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92 }
+\DoxyCodeLine{103         T\& \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a92e31227d3285309139f2ac3697d265b}{at}}(\textcolor{keywordtype}{size\_t});}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105 }
+\DoxyCodeLine{113         T \mbox{\hyperlink{class_d_sin_cpp_1_1_array_aef1eb011241494af47de895d8349588f}{front}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115 }
+\DoxyCodeLine{123         T \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a2b407d911577e8a3e41c84184fe6b26b}{back}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{125 }
+\DoxyCodeLine{137         T\& \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a6ad9427087fbc27d3b58b1085b85c8ca}{operator []}}(\textcolor{keywordtype}{size\_t});}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{139         \textcolor{keyword}{const} T\& \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a6ad9427087fbc27d3b58b1085b85c8ca}{operator []}}(\textcolor{keywordtype}{size\_t}) \textcolor{keyword}{const};}
+\DoxyCodeLine{140 }
+\DoxyCodeLine{141 }
+\DoxyCodeLine{147         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a185333d9f01ff49476a0c2779a0a4f05}{swap}}(\mbox{\hyperlink{class_d_sin_cpp_1_1_array}{Array<T, MaxSize>}}\&);}
+\DoxyCodeLine{148 }
+\DoxyCodeLine{149 }
+\DoxyCodeLine{150         \textcolor{comment}{/* Iterative Methods */}}
+\DoxyCodeLine{151 }
+\DoxyCodeLine{152 }
+\DoxyCodeLine{160         iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_ac8d0cc34c6db5e7dd96193c6529bf7cd}{begin}}();}
+\DoxyCodeLine{161 }
+\DoxyCodeLine{162 }
+\DoxyCodeLine{170         iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_aafa9d7f4153e931665719c0d18c47b10}{end}}();}
+\DoxyCodeLine{171 }
+\DoxyCodeLine{172 }
+\DoxyCodeLine{181         const\_iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_ae9967e40476b6a6ae6897d3e9df904a6}{begin}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{182 }
+\DoxyCodeLine{183 }
+\DoxyCodeLine{192         const\_iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a8eee378d02e7cf2316090a67d0e9d46f}{end}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{193 }
+\DoxyCodeLine{194 }
+\DoxyCodeLine{203         reverse\_iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_abf6ea3a5d3b6738db8080a79a8a5b57b}{rbegin}}();}
+\DoxyCodeLine{204 }
+\DoxyCodeLine{205 }
+\DoxyCodeLine{214         reverse\_iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a7ed4d8a1bc899b22d304d527bfe19441}{rend}}();}
+\DoxyCodeLine{215 }
+\DoxyCodeLine{216 }
+\DoxyCodeLine{225         const\_reverse\_iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a95a76f0f5ee4d6f39a58810dca020cab}{rbegin}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{226 }
+\DoxyCodeLine{227 }
+\DoxyCodeLine{236         const\_reverse\_iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a16b88a44029f8cd054bbe1c5d686e773}{rend}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{237 }
+\DoxyCodeLine{238 }
+\DoxyCodeLine{248         const\_iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a0a0a83205a4be5178d930a92a8c2f9c6}{cbegin}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{249 }
+\DoxyCodeLine{250 }
+\DoxyCodeLine{259         const\_iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a4a91874702823f450c137f9e018cebd9}{cend}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{260 }
+\DoxyCodeLine{261 }
+\DoxyCodeLine{270         const\_reverse\_iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a2e13887b37e047d97ed45d7288172383}{crbegin}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{271 }
+\DoxyCodeLine{272 }
+\DoxyCodeLine{283         const\_reverse\_iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a07ca05a80443b5b0a2fe222f5d7da074}{crbend}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{284 }
+\DoxyCodeLine{285 }
+\DoxyCodeLine{286     \textcolor{keyword}{private}:}
+\DoxyCodeLine{287         T data[MaxSize];}
+\DoxyCodeLine{288     \};}
+\DoxyCodeLine{289 \}}
+\DoxyCodeLine{290 }
+\DoxyCodeLine{291 \textcolor{preprocessor}{\#include "{}array.tcc"{}}}
+\DoxyCodeLine{292 }
+\DoxyCodeLine{293 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* end of include guard : ARRAY\_HPP */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

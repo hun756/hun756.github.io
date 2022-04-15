@@ -1,0 +1,215 @@
+\hypertarget{class_doubly_list}{}\doxysection{Doubly\+List\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_doubly_list}\index{DoublyList$<$ T $>$@{DoublyList$<$ T $>$}}
+
+
+{\ttfamily \#include $<$doubly\+\_\+list.\+hpp$>$}
+
+Inheritance diagram for Doubly\+List\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_doubly_list}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doubly_list_a1fc8634f3bf728631105986abf2593cf}\label{class_doubly_list_a1fc8634f3bf728631105986abf2593cf}} 
+using {\bfseries nodeptr} = Doubly\+Node$<$ T $>$ $\ast$
+\item 
+\mbox{\Hypertarget{class_doubly_list_ae34acf2a6fdebc681353dd3ff1ed7e7f}\label{class_doubly_list_ae34acf2a6fdebc681353dd3ff1ed7e7f}} 
+using {\bfseries node} = Doubly\+Node$<$ T $>$
+\item 
+\mbox{\Hypertarget{class_doubly_list_acb879cde0794a5d3e270d28b6696ce81}\label{class_doubly_list_acb879cde0794a5d3e270d28b6696ce81}} 
+using {\bfseries Iterator} = Iterator$<$ T $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doubly_list_a11b0c330c9d4454ec6eb7b4d6fc67dc2}\label{class_doubly_list_a11b0c330c9d4454ec6eb7b4d6fc67dc2}} 
+{\bfseries Doubly\+List} ()
+\begin{DoxyCompactList}\small\item\em Construct a new TArray object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_doubly_list_a58b40eb64b9d7f9392f3a4c87778171e}{Doubly\+List}} (std\+::initializer\+\_\+list$<$ T $>$)
+\begin{DoxyCompactList}\small\item\em Construct a new TArray object. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_doubly_list_acb27726759ee879e0915a411ecc46199}{empty}} () const
+\begin{DoxyCompactList}\small\item\em This method checks if the array is empty. \end{DoxyCompactList}\item 
+const size\+\_\+t \mbox{\hyperlink{class_doubly_list_a0692ce40603a58075bd466e0b0058119}{size}} () const
+\begin{DoxyCompactList}\small\item\em This method returns the number of elements of the array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_doubly_list_afd33ba3ddf2255b6bfad4abb97d297a4}{push\+\_\+back}} (const T \&)
+\begin{DoxyCompactList}\small\item\em This method adds an element to the ending of the dynamic array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_doubly_list_ac46df8377ddb91fb5f155a723940b80f}{push\+\_\+front}} (const T \&)
+\begin{DoxyCompactList}\small\item\em This method adds an element to the beginning of the dynamic array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_doubly_list_ae8674efa214faeb136742c918646628c}\label{class_doubly_list_ae8674efa214faeb136742c918646628c}} 
+void {\bfseries pop\+\_\+back} ()
+\begin{DoxyCompactList}\small\item\em This method removes the last item from list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_doubly_list_a55831c31ed4d6346d063337e378fe4ec}\label{class_doubly_list_a55831c31ed4d6346d063337e378fe4ec}} 
+void {\bfseries pop\+\_\+front} ()
+\begin{DoxyCompactList}\small\item\em This method removes the first item from list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_doubly_list_aa2aca45c6e6e9a3c397086f050bfe55e}\label{class_doubly_list_aa2aca45c6e6e9a3c397086f050bfe55e}} 
+void {\bfseries clear} ()
+\begin{DoxyCompactList}\small\item\em This method clears the contents of the list. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_doubly_list_aa9f4d0d9507513989701adfdae34d4f2}{front}} () const
+\begin{DoxyCompactList}\small\item\em This method \+: returns first element in the array. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_doubly_list_a5e9e757d0d6a063aa51349e0b22b0463}{back}} () const
+\begin{DoxyCompactList}\small\item\em This method \+: returns first element in the array. \end{DoxyCompactList}\item 
+Iterator \mbox{\hyperlink{class_doubly_list_af8339f42b6211235188f173b79e4b974}{begin}} ()
+\begin{DoxyCompactList}\small\item\em This method a pointer that returns the starting point of the array. \end{DoxyCompactList}\item 
+Iterator \mbox{\hyperlink{class_doubly_list_a9370a69f31fe2ca3fc36a890c3315b21}{end}} ()
+\begin{DoxyCompactList}\small\item\em This method a pointer that returns the ending point of the array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Doubly\+List$<$ T $>$}
+File \+: \mbox{\hyperlink{doubly__list_8hpp_source}{doubly\+\_\+list.\+hpp}} Explain \+: C++ doubly linked list implementation like std\+::list$<$$>$ Author \+: Mehmet Ekemen Nickname \+: \`{}hun Email \+: \href{mailto:ekemenms@hotmail.com}{\texttt{ ekemenms@hotmail.\+com}} Date \+: 5.\+12.\+2012 (DD-\/\+MM-\/\+YYYY) (Updated) Github \+: github.\+com/hun756 Resource \+: \href{https://github.com/hun756/Data-Sutructures-in-CPlusPlus/}{\texttt{ https\+://github.\+com/hun756/\+Data-\/\+Sutructures-\/in-\/\+CPlus\+Plus/}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_doubly_list_a58b40eb64b9d7f9392f3a4c87778171e}\label{class_doubly_list_a58b40eb64b9d7f9392f3a4c87778171e}} 
+\index{DoublyList$<$ T $>$@{DoublyList$<$ T $>$}!DoublyList@{DoublyList}}
+\index{DoublyList@{DoublyList}!DoublyList$<$ T $>$@{DoublyList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{DoublyList()}{DoublyList()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_doubly_list}{Doubly\+List}}$<$ T $>$\mbox{\hyperlink{class_doubly_list}{\+::\+Doubly\+List}} (\begin{DoxyParamCaption}\item[{std\+::initializer\+\_\+list$<$ T $>$}]{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new TArray object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Object from initializer\+\_\+list class. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_doubly_list_a5e9e757d0d6a063aa51349e0b22b0463}\label{class_doubly_list_a5e9e757d0d6a063aa51349e0b22b0463}} 
+\index{DoublyList$<$ T $>$@{DoublyList$<$ T $>$}!back@{back}}
+\index{back@{back}!DoublyList$<$ T $>$@{DoublyList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{back()}{back()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{class_doubly_list}{Doubly\+List}}$<$ T $>$\+::back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method \+: returns first element in the array. 
+
+\begin{DoxyReturn}{Returns}
+the last element of the array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_doubly_list_af8339f42b6211235188f173b79e4b974}\label{class_doubly_list_af8339f42b6211235188f173b79e4b974}} 
+\index{DoublyList$<$ T $>$@{DoublyList$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!DoublyList$<$ T $>$@{DoublyList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+Iterator \mbox{\hyperlink{class_doubly_list}{Doubly\+List}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method a pointer that returns the starting point of the array. 
+
+\begin{DoxyReturn}{Returns}
+object from class Iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_doubly_list_acb27726759ee879e0915a411ecc46199}\label{class_doubly_list_acb27726759ee879e0915a411ecc46199}} 
+\index{DoublyList$<$ T $>$@{DoublyList$<$ T $>$}!empty@{empty}}
+\index{empty@{empty}!DoublyList$<$ T $>$@{DoublyList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const bool \mbox{\hyperlink{class_doubly_list}{Doubly\+List}}$<$ T $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method checks if the array is empty. 
+
+\begin{DoxyReturn}{Returns}
+value of bool
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & if index == 0 \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_doubly_list_a9370a69f31fe2ca3fc36a890c3315b21}\label{class_doubly_list_a9370a69f31fe2ca3fc36a890c3315b21}} 
+\index{DoublyList$<$ T $>$@{DoublyList$<$ T $>$}!end@{end}}
+\index{end@{end}!DoublyList$<$ T $>$@{DoublyList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+Iterator \mbox{\hyperlink{class_doubly_list}{Doubly\+List}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method a pointer that returns the ending point of the array. 
+
+\begin{DoxyReturn}{Returns}
+object from class Iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_doubly_list_aa9f4d0d9507513989701adfdae34d4f2}\label{class_doubly_list_aa9f4d0d9507513989701adfdae34d4f2}} 
+\index{DoublyList$<$ T $>$@{DoublyList$<$ T $>$}!front@{front}}
+\index{front@{front}!DoublyList$<$ T $>$@{DoublyList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{front()}{front()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{class_doubly_list}{Doubly\+List}}$<$ T $>$\+::front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method \+: returns first element in the array. 
+
+\begin{DoxyReturn}{Returns}
+the first element of the array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_doubly_list_afd33ba3ddf2255b6bfad4abb97d297a4}\label{class_doubly_list_afd33ba3ddf2255b6bfad4abb97d297a4}} 
+\index{DoublyList$<$ T $>$@{DoublyList$<$ T $>$}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!DoublyList$<$ T $>$@{DoublyList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_doubly_list}{Doubly\+List}}$<$ T $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const T \&}]{ }\end{DoxyParamCaption})}
+
+
+
+This method adds an element to the ending of the dynamic array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & It is the value of the element to be added. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_doubly_list_ac46df8377ddb91fb5f155a723940b80f}\label{class_doubly_list_ac46df8377ddb91fb5f155a723940b80f}} 
+\index{DoublyList$<$ T $>$@{DoublyList$<$ T $>$}!push\_front@{push\_front}}
+\index{push\_front@{push\_front}!DoublyList$<$ T $>$@{DoublyList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push\_front()}{push\_front()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_doubly_list}{Doubly\+List}}$<$ T $>$\+::push\+\_\+front (\begin{DoxyParamCaption}\item[{const T \&}]{ }\end{DoxyParamCaption})}
+
+
+
+This method adds an element to the beginning of the dynamic array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & It is the value of the element to be added. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_doubly_list_a0692ce40603a58075bd466e0b0058119}\label{class_doubly_list_a0692ce40603a58075bd466e0b0058119}} 
+\index{DoublyList$<$ T $>$@{DoublyList$<$ T $>$}!size@{size}}
+\index{size@{size}!DoublyList$<$ T $>$@{DoublyList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const size\+\_\+t \mbox{\hyperlink{class_doubly_list}{Doubly\+List}}$<$ T $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method returns the number of elements of the array. 
+
+\begin{DoxyReturn}{Returns}
+size\+\_\+t
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em index} & \\
+\hline
+\end{DoxyRetVals}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/doubly\+\_\+list.\+hpp\end{DoxyCompactItemize}

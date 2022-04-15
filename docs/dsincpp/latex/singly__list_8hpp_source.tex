@@ -1,0 +1,77 @@
+\hypertarget{singly__list_8hpp_source}{}\doxysection{singly\+\_\+list.\+hpp}
+\label{singly__list_8hpp_source}\index{include/singly\_list.hpp@{include/singly\_list.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{comment}{/* Include guard of : SINGLY\_LIST\_HPP */}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#ifndef SINGLY\_LIST\_HPP}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define SINGLY\_LIST\_HPP}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <initializer\_list>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <cstddef>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}dependencies/list\_node.hpp"{}}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include "{}dependencies/list\_iterator.hpp"{}}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{25 \textcolor{keyword}{class }\mbox{\hyperlink{class_singly_list}{SinglyList}}}
+\DoxyCodeLine{26 \{}
+\DoxyCodeLine{27 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \textcolor{keyword}{using}       nodeptr     =       SinglyNode<T>*;}
+\DoxyCodeLine{29     \textcolor{keyword}{using}       node        =       SinglyNode<T>;}
+\DoxyCodeLine{30 \textcolor{keyword}{public}:}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{35     \mbox{\hyperlink{class_singly_list_a5e60d86ee34af7ee8d47de08c900b2b7}{SinglyList}}();}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 }
+\DoxyCodeLine{43     \mbox{\hyperlink{class_singly_list_a3956e0bdf8d7f694ad98e4b8b3a72bd6}{SinglyList}}(std::initializer\_list<T>);}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 }
+\DoxyCodeLine{56     \textcolor{keyword}{const} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_singly_list_af46452dbee19ef5c219bd3b112e6ec64}{empty}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 }
+\DoxyCodeLine{69     \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_singly_list_a96481742898637c79fc20257193afad4}{size}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 }
+\DoxyCodeLine{80     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_singly_list_a70d77035001e3c1397da48fd9bb09ab3}{push\_back}}(\textcolor{keyword}{const} T\&);}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82 }
+\DoxyCodeLine{91     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_singly_list_af329c83f625be5862ecba99ee15dbd6d}{push\_front}}(\textcolor{keyword}{const} T\&);}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93 }
+\DoxyCodeLine{98     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_singly_list_aaaae429b4cae6c628da87b525f0184a7}{pop\_back}}();}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100 }
+\DoxyCodeLine{105     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_singly_list_a1c5a5c47d4ed2d1cfcb2c96f9be2bbba}{pop\_front}}();}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107 }
+\DoxyCodeLine{112     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_singly_list_ac438755bbca3ea800a95cb1c9752b3c1}{clear}}();}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114 }
+\DoxyCodeLine{122     T \mbox{\hyperlink{class_singly_list_a609e965204dfce3f5c53f484c68be15e}{front}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124 }
+\DoxyCodeLine{132     T \mbox{\hyperlink{class_singly_list_a5d6e6f2bfcd20521a41fe48be543094c}{back}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134 \textcolor{keyword}{private}:}
+\DoxyCodeLine{135     nodeptr     head;}
+\DoxyCodeLine{136     nodeptr     tail;}
+\DoxyCodeLine{137     \textcolor{keywordtype}{size\_t}      theSize = 0;}
+\DoxyCodeLine{138 \};}
+\DoxyCodeLine{139 }
+\DoxyCodeLine{140 }
+\DoxyCodeLine{141 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{142 \textcolor{keyword}{class }\mbox{\hyperlink{class_circular_sinly_list}{CircularSinlyList}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_singly_list}{SinglyList}}<T>}
+\DoxyCodeLine{143 \{}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{145 \};}
+\DoxyCodeLine{146 }
+\DoxyCodeLine{147 }
+\DoxyCodeLine{148 \textcolor{comment}{//> template implementation}}
+\DoxyCodeLine{149 \textcolor{preprocessor}{\#include "{}singly\_list.tcc"{}}}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* end of include guard : SINGLY\_LIST\_HPP */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

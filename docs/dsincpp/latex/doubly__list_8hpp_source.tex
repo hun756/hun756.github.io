@@ -1,0 +1,84 @@
+\hypertarget{doubly__list_8hpp_source}{}\doxysection{doubly\+\_\+list.\+hpp}
+\label{doubly__list_8hpp_source}\index{include/doubly\_list.hpp@{include/doubly\_list.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{comment}{/* include guard of : DOUBLY\_LİST\_HPP */}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#ifndef DOUBLY\_LIST\_HPP}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define DOUBLY\_LIST\_HPP}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <utility>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <initializer\_list>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}dependencies/list\_node.hpp"{}}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}dependencies/list\_iterator.hpp"{}}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{class_doubly_list}{DoublyList}}}
+\DoxyCodeLine{24 \{}
+\DoxyCodeLine{25 \textcolor{keyword}{public}:}
+\DoxyCodeLine{26     \textcolor{keyword}{using}      nodeptr      =     DoublyNode<T>*;}
+\DoxyCodeLine{27     \textcolor{keyword}{using}      node         =     DoublyNode<T>;}
+\DoxyCodeLine{28     \textcolor{keyword}{using}      Iterator     =     Iterator<T>;}
+\DoxyCodeLine{29 \textcolor{keyword}{public}:}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{35     \mbox{\hyperlink{class_doubly_list_a11b0c330c9d4454ec6eb7b4d6fc67dc2}{DoublyList}}();}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 }
+\DoxyCodeLine{45     \mbox{\hyperlink{class_doubly_list_a58b40eb64b9d7f9392f3a4c87778171e}{DoublyList}}(std::initializer\_list<T>);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 }
+\DoxyCodeLine{58     \textcolor{keyword}{const} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_doubly_list_acb27726759ee879e0915a411ecc46199}{empty}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 }
+\DoxyCodeLine{71     \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_doubly_list_a0692ce40603a58075bd466e0b0058119}{size}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 }
+\DoxyCodeLine{82     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_doubly_list_afd33ba3ddf2255b6bfad4abb97d297a4}{push\_back}}(\textcolor{keyword}{const} T\&);}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84 }
+\DoxyCodeLine{93     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_doubly_list_ac46df8377ddb91fb5f155a723940b80f}{push\_front}}(\textcolor{keyword}{const} T\&);}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95 }
+\DoxyCodeLine{100     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_doubly_list_ae8674efa214faeb136742c918646628c}{pop\_back}}();}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102 }
+\DoxyCodeLine{107     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_doubly_list_a55831c31ed4d6346d063337e378fe4ec}{pop\_front}}();}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109 }
+\DoxyCodeLine{114     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_doubly_list_aa2aca45c6e6e9a3c397086f050bfe55e}{clear}}();}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116 }
+\DoxyCodeLine{124     T \mbox{\hyperlink{class_doubly_list_aa9f4d0d9507513989701adfdae34d4f2}{front}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126 }
+\DoxyCodeLine{134     T \mbox{\hyperlink{class_doubly_list_a5e9e757d0d6a063aa51349e0b22b0463}{back}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{136 }
+\DoxyCodeLine{137     \textcolor{comment}{/* Iterative methods */}}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{146     Iterator \mbox{\hyperlink{class_doubly_list_af8339f42b6211235188f173b79e4b974}{begin}}();}
+\DoxyCodeLine{147 }
+\DoxyCodeLine{148 }
+\DoxyCodeLine{156     Iterator \mbox{\hyperlink{class_doubly_list_a9370a69f31fe2ca3fc36a890c3315b21}{end}}();}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158 \textcolor{keyword}{private}:}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{160     nodeptr head;}
+\DoxyCodeLine{161     nodeptr tail;}
+\DoxyCodeLine{162     \textcolor{keywordtype}{size\_t}  theSize = 0;}
+\DoxyCodeLine{163 \};}
+\DoxyCodeLine{164 }
+\DoxyCodeLine{165 }
+\DoxyCodeLine{166 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{167 \textcolor{keyword}{class }\mbox{\hyperlink{class_circular_doubly_list}{CircularDoublyList}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_doubly_list}{DoublyList}}<T>}
+\DoxyCodeLine{168 \{}
+\DoxyCodeLine{169 }
+\DoxyCodeLine{170 \};}
+\DoxyCodeLine{171 }
+\DoxyCodeLine{172 \textcolor{preprocessor}{\#include "{}doubly\_list.tcc"{}}}
+\DoxyCodeLine{173 }
+\DoxyCodeLine{174 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{175 \textcolor{comment}{/* end of include guard : DOUBLY\_LİST\_HPP */}}
+
+\end{DoxyCode}

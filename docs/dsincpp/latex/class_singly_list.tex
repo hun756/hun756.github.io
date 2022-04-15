@@ -1,0 +1,184 @@
+\hypertarget{class_singly_list}{}\doxysection{Singly\+List\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_singly_list}\index{SinglyList$<$ T $>$@{SinglyList$<$ T $>$}}
+
+
+{\ttfamily \#include $<$singly\+\_\+list.\+hpp$>$}
+
+Inheritance diagram for Singly\+List\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_singly_list}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_singly_list_a2a463a54c04c589fdcde0a9eb82575ca}\label{class_singly_list_a2a463a54c04c589fdcde0a9eb82575ca}} 
+using {\bfseries nodeptr} = Singly\+Node$<$ T $>$ $\ast$
+\item 
+\mbox{\Hypertarget{class_singly_list_afb04408c01e2d0b7590c8f4800985fc6}\label{class_singly_list_afb04408c01e2d0b7590c8f4800985fc6}} 
+using {\bfseries node} = Singly\+Node$<$ T $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_singly_list_a5e60d86ee34af7ee8d47de08c900b2b7}{Singly\+List}} ()
+\item 
+\mbox{\hyperlink{class_singly_list_a3956e0bdf8d7f694ad98e4b8b3a72bd6}{Singly\+List}} (std\+::initializer\+\_\+list$<$ T $>$)
+\item 
+const bool \mbox{\hyperlink{class_singly_list_af46452dbee19ef5c219bd3b112e6ec64}{empty}} () const
+\begin{DoxyCompactList}\small\item\em This method checks if the array is empty. \end{DoxyCompactList}\item 
+const size\+\_\+t \mbox{\hyperlink{class_singly_list_a96481742898637c79fc20257193afad4}{size}} () const
+\begin{DoxyCompactList}\small\item\em This method returns the number of elements of the array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_singly_list_a70d77035001e3c1397da48fd9bb09ab3}{push\+\_\+back}} (const T \&)
+\begin{DoxyCompactList}\small\item\em This method adds an element to the ending of the dynamic array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_singly_list_af329c83f625be5862ecba99ee15dbd6d}{push\+\_\+front}} (const T \&)
+\begin{DoxyCompactList}\small\item\em This method adds an element to the beginning of the dynamic array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_singly_list_aaaae429b4cae6c628da87b525f0184a7}\label{class_singly_list_aaaae429b4cae6c628da87b525f0184a7}} 
+void {\bfseries pop\+\_\+back} ()
+\begin{DoxyCompactList}\small\item\em This method removes the last item from list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_singly_list_a1c5a5c47d4ed2d1cfcb2c96f9be2bbba}\label{class_singly_list_a1c5a5c47d4ed2d1cfcb2c96f9be2bbba}} 
+void {\bfseries pop\+\_\+front} ()
+\begin{DoxyCompactList}\small\item\em This method removes the first item from list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_singly_list_ac438755bbca3ea800a95cb1c9752b3c1}\label{class_singly_list_ac438755bbca3ea800a95cb1c9752b3c1}} 
+void {\bfseries clear} ()
+\begin{DoxyCompactList}\small\item\em This method clears the contents of the list. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_singly_list_a609e965204dfce3f5c53f484c68be15e}{front}} () const
+\begin{DoxyCompactList}\small\item\em This method \+: returns first element in the array. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_singly_list_a5d6e6f2bfcd20521a41fe48be543094c}{back}} () const
+\begin{DoxyCompactList}\small\item\em This method \+: returns first element in the array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Singly\+List$<$ T $>$}
+File \+: \mbox{\hyperlink{singly__list_8hpp_source}{singly\+\_\+list.\+hpp}} Explain \+: C++ singly linked list implementation. Author \+: Mehmet Ekemen Nickname \+: \`{}hun Email \+: \href{mailto:ekemenms@hotmail.com}{\texttt{ ekemenms@hotmail.\+com}} Date \+: 5.\+12.\+2012 (DD-\/\+MM-\/\+YYYY) (Updated) Github \+: github.\+com/hun756 Resource \+: \href{https://github.com/hun756/Data-Sutructures-in-CPlusPlus/}{\texttt{ https\+://github.\+com/hun756/\+Data-\/\+Sutructures-\/in-\/\+CPlus\+Plus/}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_singly_list_a5e60d86ee34af7ee8d47de08c900b2b7}\label{class_singly_list_a5e60d86ee34af7ee8d47de08c900b2b7}} 
+\index{SinglyList$<$ T $>$@{SinglyList$<$ T $>$}!SinglyList@{SinglyList}}
+\index{SinglyList@{SinglyList}!SinglyList$<$ T $>$@{SinglyList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SinglyList()}{SinglyList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_singly_list}{Singly\+List}}$<$ T $>$\mbox{\hyperlink{class_singly_list}{\+::\+Singly\+List}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+constructor \mbox{\Hypertarget{class_singly_list_a3956e0bdf8d7f694ad98e4b8b3a72bd6}\label{class_singly_list_a3956e0bdf8d7f694ad98e4b8b3a72bd6}} 
+\index{SinglyList$<$ T $>$@{SinglyList$<$ T $>$}!SinglyList@{SinglyList}}
+\index{SinglyList@{SinglyList}!SinglyList$<$ T $>$@{SinglyList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SinglyList()}{SinglyList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_singly_list}{Singly\+List}}$<$ T $>$\mbox{\hyperlink{class_singly_list}{\+::\+Singly\+List}} (\begin{DoxyParamCaption}\item[{std\+::initializer\+\_\+list$<$ T $>$}]{ }\end{DoxyParamCaption})}
+
+Constructor with initializer list
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & -\/\texorpdfstring{$>$}{>} object from initializer\+\_\+list class \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_singly_list_a5d6e6f2bfcd20521a41fe48be543094c}\label{class_singly_list_a5d6e6f2bfcd20521a41fe48be543094c}} 
+\index{SinglyList$<$ T $>$@{SinglyList$<$ T $>$}!back@{back}}
+\index{back@{back}!SinglyList$<$ T $>$@{SinglyList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{back()}{back()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{class_singly_list}{Singly\+List}}$<$ T $>$\+::back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method \+: returns first element in the array. 
+
+\begin{DoxyReturn}{Returns}
+the last element of the array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_singly_list_af46452dbee19ef5c219bd3b112e6ec64}\label{class_singly_list_af46452dbee19ef5c219bd3b112e6ec64}} 
+\index{SinglyList$<$ T $>$@{SinglyList$<$ T $>$}!empty@{empty}}
+\index{empty@{empty}!SinglyList$<$ T $>$@{SinglyList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const bool \mbox{\hyperlink{class_singly_list}{Singly\+List}}$<$ T $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method checks if the array is empty. 
+
+\begin{DoxyReturn}{Returns}
+value of bool
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & if index == 0 \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_singly_list_a609e965204dfce3f5c53f484c68be15e}\label{class_singly_list_a609e965204dfce3f5c53f484c68be15e}} 
+\index{SinglyList$<$ T $>$@{SinglyList$<$ T $>$}!front@{front}}
+\index{front@{front}!SinglyList$<$ T $>$@{SinglyList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{front()}{front()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{class_singly_list}{Singly\+List}}$<$ T $>$\+::front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method \+: returns first element in the array. 
+
+\begin{DoxyReturn}{Returns}
+the first element of the array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_singly_list_a70d77035001e3c1397da48fd9bb09ab3}\label{class_singly_list_a70d77035001e3c1397da48fd9bb09ab3}} 
+\index{SinglyList$<$ T $>$@{SinglyList$<$ T $>$}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!SinglyList$<$ T $>$@{SinglyList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_singly_list}{Singly\+List}}$<$ T $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const T \&}]{ }\end{DoxyParamCaption})}
+
+
+
+This method adds an element to the ending of the dynamic array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & It is the value of the element to be added. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_singly_list_af329c83f625be5862ecba99ee15dbd6d}\label{class_singly_list_af329c83f625be5862ecba99ee15dbd6d}} 
+\index{SinglyList$<$ T $>$@{SinglyList$<$ T $>$}!push\_front@{push\_front}}
+\index{push\_front@{push\_front}!SinglyList$<$ T $>$@{SinglyList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push\_front()}{push\_front()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_singly_list}{Singly\+List}}$<$ T $>$\+::push\+\_\+front (\begin{DoxyParamCaption}\item[{const T \&}]{ }\end{DoxyParamCaption})}
+
+
+
+This method adds an element to the beginning of the dynamic array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & It is the value of the element to be added. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_singly_list_a96481742898637c79fc20257193afad4}\label{class_singly_list_a96481742898637c79fc20257193afad4}} 
+\index{SinglyList$<$ T $>$@{SinglyList$<$ T $>$}!size@{size}}
+\index{size@{size}!SinglyList$<$ T $>$@{SinglyList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const size\+\_\+t \mbox{\hyperlink{class_singly_list}{Singly\+List}}$<$ T $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method returns the number of elements of the array. 
+
+\begin{DoxyReturn}{Returns}
+size\+\_\+t
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em index} & \\
+\hline
+\end{DoxyRetVals}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/singly\+\_\+list.\+hpp\end{DoxyCompactItemize}

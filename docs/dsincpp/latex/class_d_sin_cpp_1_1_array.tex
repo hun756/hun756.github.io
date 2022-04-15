@@ -1,0 +1,401 @@
+\hypertarget{class_d_sin_cpp_1_1_array}{}\doxysection{DSin\+Cpp\+::Array\texorpdfstring{$<$}{<} T, Max\+Size \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_d_sin_cpp_1_1_array}\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_a499a5294cdae76528a01d93a69703226}\label{class_d_sin_cpp_1_1_array_a499a5294cdae76528a01d93a69703226}} 
+using {\bfseries const\+\_\+iterator} = Const\+Iterator$<$ T, Max\+Size $>$
+\item 
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_a5e0dfafd4e5dd890f4ac7df69b67eec2}\label{class_d_sin_cpp_1_1_array_a5e0dfafd4e5dd890f4ac7df69b67eec2}} 
+using {\bfseries iterator} = Iterator$<$ T, Max\+Size $>$
+\item 
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_aad5124a13e3f77c0c97e597fa236a5ed}\label{class_d_sin_cpp_1_1_array_aad5124a13e3f77c0c97e597fa236a5ed}} 
+using {\bfseries reverse\+\_\+iterator} = Reverse\+Iterator$<$ T, Max\+Size $>$
+\item 
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_a31bbd8b968fb7d772dee65bf312d2edb}\label{class_d_sin_cpp_1_1_array_a31bbd8b968fb7d772dee65bf312d2edb}} 
+using {\bfseries const\+\_\+reverse\+\_\+iterator} = Const\+Reverse\+Iterator$<$ T, Max\+Size $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_ae88ff318626df3d72a520453e8500e24}\label{class_d_sin_cpp_1_1_array_ae88ff318626df3d72a520453e8500e24}} 
+{\bfseries Array} ()=default
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array}{TArray}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_d_sin_cpp_1_1_array_a495befe5ae48c79cfcdfef6e9e6b49ca}{Array}} (std\+::initializer\+\_\+list$<$ T $>$)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array}{TArray}} object. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a70bcf130a6abd0d1256d6f66c974e8bf}{empty}} () const
+\begin{DoxyCompactList}\small\item\em This method checks if the array is empty. \end{DoxyCompactList}\item 
+const size\+\_\+t \mbox{\hyperlink{class_d_sin_cpp_1_1_array_ad90a1ee756b7a465f9ccfa1f7710f13d}{size}} () const
+\begin{DoxyCompactList}\small\item\em This method returns the number of elements of the array. \end{DoxyCompactList}\item 
+const size\+\_\+t \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a974eb819607e55398a485bea7dd7b334}{max\+Size}} () const
+\begin{DoxyCompactList}\small\item\em This method returns the maximum number of elements the array can hold. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a92e31227d3285309139f2ac3697d265b}{at}} (size\+\_\+t)
+\begin{DoxyCompactList}\small\item\em This method takes the desired array element as a parameter. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_d_sin_cpp_1_1_array_aef1eb011241494af47de895d8349588f}{front}} () const
+\begin{DoxyCompactList}\small\item\em This method \+: returns first element in the array. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a2b407d911577e8a3e41c84184fe6b26b}{back}} () const
+\begin{DoxyCompactList}\small\item\em This method \+: returns first element in the array. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a6ad9427087fbc27d3b58b1085b85c8ca}{operator\mbox{[}$\,$\mbox{]}}} (size\+\_\+t)
+\begin{DoxyCompactList}\small\item\em overloading operator \mbox{[}\mbox{]} \+: takes the desired array element as a parameter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_aeba6100d7a241f0d2f96d610f580daeb}\label{class_d_sin_cpp_1_1_array_aeba6100d7a241f0d2f96d610f580daeb}} 
+const T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t) const
+\item 
+void \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a185333d9f01ff49476a0c2779a0a4f05}{swap}} (\mbox{\hyperlink{class_d_sin_cpp_1_1_array}{Array}}$<$ T, Max\+Size $>$ \&)
+\item 
+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_ac8d0cc34c6db5e7dd96193c6529bf7cd}{begin}} ()
+\begin{DoxyCompactList}\small\item\em This method a pointer that returns the starting point of the array. \end{DoxyCompactList}\item 
+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_aafa9d7f4153e931665719c0d18c47b10}{end}} ()
+\begin{DoxyCompactList}\small\item\em This method a pointer that returns the ending point of the array. \end{DoxyCompactList}\item 
+const\+\_\+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_ae9967e40476b6a6ae6897d3e9df904a6}{begin}} () const
+\begin{DoxyCompactList}\small\item\em This method a const pointer that returns the ending point of the array. \end{DoxyCompactList}\item 
+const\+\_\+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a8eee378d02e7cf2316090a67d0e9d46f}{end}} () const
+\begin{DoxyCompactList}\small\item\em This method a const pointer that returns the ending point of the array. \end{DoxyCompactList}\item 
+reverse\+\_\+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_abf6ea3a5d3b6738db8080a79a8a5b57b}{rbegin}} ()
+\begin{DoxyCompactList}\small\item\em This method a const pointer that returns the starting point of the array. \end{DoxyCompactList}\item 
+reverse\+\_\+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a7ed4d8a1bc899b22d304d527bfe19441}{rend}} ()
+\begin{DoxyCompactList}\small\item\em This method a const pointer that returns the ending point of the array. \end{DoxyCompactList}\item 
+const\+\_\+reverse\+\_\+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a95a76f0f5ee4d6f39a58810dca020cab}{rbegin}} () const
+\begin{DoxyCompactList}\small\item\em This method \+: a const pointer that returns the starting point of the array. \end{DoxyCompactList}\item 
+const\+\_\+reverse\+\_\+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a16b88a44029f8cd054bbe1c5d686e773}{rend}} () const
+\begin{DoxyCompactList}\small\item\em This method \+: a const pointer that returns the ending point of the array. \end{DoxyCompactList}\item 
+const\+\_\+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a0a0a83205a4be5178d930a92a8c2f9c6}{cbegin}} () const
+\begin{DoxyCompactList}\small\item\em This method \+: a const (always) pointer that returns the starting point of the array. \end{DoxyCompactList}\item 
+const\+\_\+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a4a91874702823f450c137f9e018cebd9}{cend}} () const
+\begin{DoxyCompactList}\small\item\em This method \+: a const (always) pointer that returns the ending point of the array. \end{DoxyCompactList}\item 
+const\+\_\+reverse\+\_\+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a2e13887b37e047d97ed45d7288172383}{crbegin}} () const
+\begin{DoxyCompactList}\small\item\em This method a pointer that returns the ending point of the array. the ending point of the array. \end{DoxyCompactList}\item 
+const\+\_\+reverse\+\_\+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array_a07ca05a80443b5b0a2fe222f5d7da074}{crbend}} () const
+\begin{DoxyCompactList}\small\item\em This method a pointer that returns the starting point of the array. The iteration direction is from the end of the array to the beginning. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_a6e093383b6bf0419358f3eeabef5acd5}\label{class_d_sin_cpp_1_1_array_a6e093383b6bf0419358f3eeabef5acd5}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{Array}}$<$ T, Max\+Size $>$ \&lhs, const \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{Array}}$<$ T, Max\+Size $>$ \&rhs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_a495befe5ae48c79cfcdfef6e9e6b49ca}\label{class_d_sin_cpp_1_1_array_a495befe5ae48c79cfcdfef6e9e6b49ca}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!Array@{Array}}
+\index{Array@{Array}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{Array()}{Array()}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+\mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::\+Array (\begin{DoxyParamCaption}\item[{std\+::initializer\+\_\+list$<$ T $>$}]{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array}{TArray}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Object from initializer\+\_\+list class. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_a92e31227d3285309139f2ac3697d265b}\label{class_d_sin_cpp_1_1_array_a92e31227d3285309139f2ac3697d265b}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!at@{at}}
+\index{at@{at}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+T \& \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::at (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{ }\end{DoxyParamCaption})}
+
+
+
+This method takes the desired array element as a parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em It} & is the index of the directory to be accessed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\& reference from template 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_a2b407d911577e8a3e41c84184fe6b26b}\label{class_d_sin_cpp_1_1_array_a2b407d911577e8a3e41c84184fe6b26b}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!back@{back}}
+\index{back@{back}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{back()}{back()}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+T \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method \+: returns first element in the array. 
+
+\begin{DoxyReturn}{Returns}
+the last element of the array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_ac8d0cc34c6db5e7dd96193c6529bf7cd}\label{class_d_sin_cpp_1_1_array_ac8d0cc34c6db5e7dd96193c6529bf7cd}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!begin@{begin}}
+\index{begin@{begin}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method a pointer that returns the starting point of the array. 
+
+\begin{DoxyReturn}{Returns}
+object from class Iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_ae9967e40476b6a6ae6897d3e9df904a6}\label{class_d_sin_cpp_1_1_array_ae9967e40476b6a6ae6897d3e9df904a6}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!begin@{begin}}
+\index{begin@{begin}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+const\+\_\+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method a const pointer that returns the ending point of the array. 
+
+\begin{DoxyReturn}{Returns}
+object from class Iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_a0a0a83205a4be5178d930a92a8c2f9c6}\label{class_d_sin_cpp_1_1_array_a0a0a83205a4be5178d930a92a8c2f9c6}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!cbegin@{cbegin}}
+\index{cbegin@{cbegin}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{cbegin()}{cbegin()}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+const\+\_\+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::cbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method \+: a const (always) pointer that returns the starting point of the array. 
+
+\begin{DoxyReturn}{Returns}
+object from class Const\+Iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_a4a91874702823f450c137f9e018cebd9}\label{class_d_sin_cpp_1_1_array_a4a91874702823f450c137f9e018cebd9}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!cend@{cend}}
+\index{cend@{cend}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{cend()}{cend()}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+const\+\_\+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::cend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method \+: a const (always) pointer that returns the ending point of the array. 
+
+\begin{DoxyReturn}{Returns}
+object from class Const\+Iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_a2e13887b37e047d97ed45d7288172383}\label{class_d_sin_cpp_1_1_array_a2e13887b37e047d97ed45d7288172383}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!crbegin@{crbegin}}
+\index{crbegin@{crbegin}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{crbegin()}{crbegin()}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+const\+\_\+reverse\+\_\+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::crbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method a pointer that returns the ending point of the array. the ending point of the array. 
+
+\begin{DoxyReturn}{Returns}
+object from class Const\+Iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_a07ca05a80443b5b0a2fe222f5d7da074}\label{class_d_sin_cpp_1_1_array_a07ca05a80443b5b0a2fe222f5d7da074}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!crbend@{crbend}}
+\index{crbend@{crbend}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{crbend()}{crbend()}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+const\+\_\+reverse\+\_\+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::crbend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method a pointer that returns the starting point of the array. The iteration direction is from the end of the array to the beginning. 
+
+\begin{DoxyReturn}{Returns}
+object from class Const\+Iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_a70bcf130a6abd0d1256d6f66c974e8bf}\label{class_d_sin_cpp_1_1_array_a70bcf130a6abd0d1256d6f66c974e8bf}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!empty@{empty}}
+\index{empty@{empty}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+const bool \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method checks if the array is empty. 
+
+\begin{DoxyReturn}{Returns}
+value of bool
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & if index == 0 \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_aafa9d7f4153e931665719c0d18c47b10}\label{class_d_sin_cpp_1_1_array_aafa9d7f4153e931665719c0d18c47b10}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!end@{end}}
+\index{end@{end}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method a pointer that returns the ending point of the array. 
+
+\begin{DoxyReturn}{Returns}
+object from class Iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_a8eee378d02e7cf2316090a67d0e9d46f}\label{class_d_sin_cpp_1_1_array_a8eee378d02e7cf2316090a67d0e9d46f}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!end@{end}}
+\index{end@{end}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+const\+\_\+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method a const pointer that returns the ending point of the array. 
+
+\begin{DoxyReturn}{Returns}
+object from class Iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_aef1eb011241494af47de895d8349588f}\label{class_d_sin_cpp_1_1_array_aef1eb011241494af47de895d8349588f}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!front@{front}}
+\index{front@{front}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{front()}{front()}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+T \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method \+: returns first element in the array. 
+
+\begin{DoxyReturn}{Returns}
+the first element of the array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_a974eb819607e55398a485bea7dd7b334}\label{class_d_sin_cpp_1_1_array_a974eb819607e55398a485bea7dd7b334}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!maxSize@{maxSize}}
+\index{maxSize@{maxSize}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{maxSize()}{maxSize()}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+const size\+\_\+t \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::max\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method returns the maximum number of elements the array can hold. 
+
+\begin{DoxyReturn}{Returns}
+$<$size\+\_\+t$>$ maxsize value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_a6ad9427087fbc27d3b58b1085b85c8ca}\label{class_d_sin_cpp_1_1_array_a6ad9427087fbc27d3b58b1085b85c8ca}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+T \& \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{ }\end{DoxyParamCaption})}
+
+
+
+overloading operator \mbox{[}\mbox{]} \+: takes the desired array element as a parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em It} & is the index of the directory to be accessed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\& reference from template 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_abf6ea3a5d3b6738db8080a79a8a5b57b}\label{class_d_sin_cpp_1_1_array_abf6ea3a5d3b6738db8080a79a8a5b57b}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!rbegin@{rbegin}}
+\index{rbegin@{rbegin}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{rbegin()}{rbegin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+reverse\+\_\+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::rbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method a const pointer that returns the starting point of the array. 
+
+\begin{DoxyReturn}{Returns}
+object from class Iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_a95a76f0f5ee4d6f39a58810dca020cab}\label{class_d_sin_cpp_1_1_array_a95a76f0f5ee4d6f39a58810dca020cab}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!rbegin@{rbegin}}
+\index{rbegin@{rbegin}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{rbegin()}{rbegin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+const\+\_\+reverse\+\_\+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::rbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method \+: a const pointer that returns the starting point of the array. 
+
+\begin{DoxyReturn}{Returns}
+object from class Iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_a7ed4d8a1bc899b22d304d527bfe19441}\label{class_d_sin_cpp_1_1_array_a7ed4d8a1bc899b22d304d527bfe19441}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!rend@{rend}}
+\index{rend@{rend}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{rend()}{rend()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+reverse\+\_\+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::rend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method a const pointer that returns the ending point of the array. 
+
+\begin{DoxyReturn}{Returns}
+object from class Iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_a16b88a44029f8cd054bbe1c5d686e773}\label{class_d_sin_cpp_1_1_array_a16b88a44029f8cd054bbe1c5d686e773}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!rend@{rend}}
+\index{rend@{rend}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{rend()}{rend()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+const\+\_\+reverse\+\_\+iterator \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::rend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method \+: a const pointer that returns the ending point of the array. 
+
+\begin{DoxyReturn}{Returns}
+object from class Iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_ad90a1ee756b7a465f9ccfa1f7710f13d}\label{class_d_sin_cpp_1_1_array_ad90a1ee756b7a465f9ccfa1f7710f13d}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!size@{size}}
+\index{size@{size}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+const size\+\_\+t \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method returns the number of elements of the array. 
+
+\begin{DoxyReturn}{Returns}
+size\+\_\+t
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em index} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_d_sin_cpp_1_1_array_a185333d9f01ff49476a0c2779a0a4f05}\label{class_d_sin_cpp_1_1_array_a185333d9f01ff49476a0c2779a0a4f05}} 
+\index{DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}!swap@{swap}}
+\index{swap@{swap}!DSinCpp::Array$<$ T, MaxSize $>$@{DSinCpp::Array$<$ T, MaxSize $>$}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily template$<$class T , size\+\_\+t Max\+Size$>$ \\
+void \mbox{\hyperlink{class_d_sin_cpp_1_1_array}{DSin\+Cpp\+::\+Array}}$<$ T, Max\+Size $>$\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_d_sin_cpp_1_1_array}{Array}}$<$ T, Max\+Size $>$ \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_d_sin_cpp_1_1_array_a185333d9f01ff49476a0c2779a0a4f05}{swap()}} method \+: accessing to array element.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Array\&} & arr -\/\texorpdfstring{$>$}{>} the index of the array to be accessed. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/array.\+hpp\end{DoxyCompactItemize}

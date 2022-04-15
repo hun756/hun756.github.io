@@ -1,0 +1,100 @@
+\hypertarget{t__array_8hpp_source}{}\doxysection{t\+\_\+array.\+hpp}
+\label{t__array_8hpp_source}\index{include/t\_array.hpp@{include/t\_array.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{comment}{/* Include guard of : T\_ARRAY\_HPP */}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#ifndef T\_ARRAY\_HPP}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define T\_ARRAY\_HPP}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <initializer\_list>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <cstddef>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}dependencies/array\_iterator.hpp"{}}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_d_sin_cpp}{DSinCpp}}}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24     \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{25     \textcolor{keyword}{class }\mbox{\hyperlink{class_d_sin_cpp_1_1_t_array}{TArray}}}
+\DoxyCodeLine{26     \{}
+\DoxyCodeLine{27     \textcolor{keyword}{public}:}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{33         \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array_ad7cd8acf52cc3b67d134131bd44041c8}{TArray}}();}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 }
+\DoxyCodeLine{40         \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array_a23ca3657cb2e94ffc8363d042fede65b}{\string~TArray}}();}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 }
+\DoxyCodeLine{50         \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array_ae4ed4046671334f1a875087e059ea3f6}{TArray}}(std::initializer\_list<T>);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 }
+\DoxyCodeLine{59         \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array_ac81b0081e998e07e064334e7709006a4}{TArray}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array}{TArray<T>}}\& dArr);}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 }
+\DoxyCodeLine{68         \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array_ae03c9cc5a8faad2982aefe5db9854880}{TArray}}(\mbox{\hyperlink{class_d_sin_cpp_1_1_t_array}{TArray<T>}}\&\& dArr) \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71         \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array}{TArray}}\& operator =(\textcolor{keyword}{const} \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array}{TArray}}\& dArr);}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73         \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array}{TArray}}\& operator =(\mbox{\hyperlink{class_d_sin_cpp_1_1_t_array}{TArray}}\&\& dArr) noexcept ;}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{85         \textcolor{keyword}{template}<\textcolor{keyword}{class} U>}
+\DoxyCodeLine{86         \textcolor{keyword}{friend} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array_a06ce5d488e97266d75d2118a828c1259}{operator == }}(\mbox{\hyperlink{class_d_sin_cpp_1_1_t_array}{TArray<U>}}\& lhs, \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array}{TArray<U>}}\& rhs);}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88 }
+\DoxyCodeLine{99         [[nodiscard]] \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array_aeb87e0b6ba6474fb94af38fe868d7a1c}{empty}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101 }
+\DoxyCodeLine{112         [[nodiscard]] \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array_a3a429403282efa19fd3a378bd07bf0cb}{size}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114 }
+\DoxyCodeLine{123         [[nodiscard]] \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array_a30351ceff9886c09d3fb5aa61e47b17a}{capacity}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{125 }
+\DoxyCodeLine{130         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array_a682465af3c0672a15b10dcbce2de375b}{shrinkToFit}}();}
+\DoxyCodeLine{131 }
+\DoxyCodeLine{132 }
+\DoxyCodeLine{143         T\& \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array_a85c7699ae0d2de88fda8672f721dc369}{at}}(\textcolor{keywordtype}{size\_t});}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{145         \textcolor{keyword}{const} T\& \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array_a85c7699ae0d2de88fda8672f721dc369}{at}}(\textcolor{keywordtype}{size\_t}) \textcolor{keyword}{const};}
+\DoxyCodeLine{146 }
+\DoxyCodeLine{147 }
+\DoxyCodeLine{159         T\& \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array_ad8f0cb11208d51643cda642ec2f38ebb}{operator []}}(\textcolor{keywordtype}{size\_t});}
+\DoxyCodeLine{160 }
+\DoxyCodeLine{161         \textcolor{keyword}{const} T\& \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array_ad8f0cb11208d51643cda642ec2f38ebb}{operator []}}(\textcolor{keywordtype}{size\_t})  \textcolor{keyword}{const};}
+\DoxyCodeLine{162 }
+\DoxyCodeLine{163 }
+\DoxyCodeLine{171         T \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array_a77ab04f43e033ca92f1b669d4d1ee4e9}{front}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{172 }
+\DoxyCodeLine{173 }
+\DoxyCodeLine{181         T \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array_a1a54175010af62aef512a991765c4c5f}{back}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{182 }
+\DoxyCodeLine{183 }
+\DoxyCodeLine{192         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array_ae95e2b6b632e175edfecf87d6a011225}{pushBack}}(\textcolor{keyword}{const} T\&);}
+\DoxyCodeLine{193 }
+\DoxyCodeLine{194 }
+\DoxyCodeLine{199         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array_a5de555f4c7506aa1a03c7c620266f045}{popBack}}();}
+\DoxyCodeLine{200 }
+\DoxyCodeLine{201 }
+\DoxyCodeLine{211         \textcolor{keyword}{template}<\textcolor{keyword}{class}... Args>}
+\DoxyCodeLine{212         T\& \mbox{\hyperlink{class_d_sin_cpp_1_1_t_array_a2ed10e47b7280a6462e012444f823811}{emplaceBack}}(Args\&\&... args);}
+\DoxyCodeLine{213 }
+\DoxyCodeLine{214     \textcolor{keyword}{private}:}
+\DoxyCodeLine{219         \textcolor{keywordtype}{void} reAlloc();}
+\DoxyCodeLine{220 }
+\DoxyCodeLine{221 }
+\DoxyCodeLine{222     \textcolor{keyword}{private}:}
+\DoxyCodeLine{223         T*    data;}
+\DoxyCodeLine{224         \textcolor{keywordtype}{size\_t}  index;}
+\DoxyCodeLine{225         \textcolor{keywordtype}{size\_t}  \_capacity;}
+\DoxyCodeLine{226     \};}
+\DoxyCodeLine{227 \}}
+\DoxyCodeLine{228 }
+\DoxyCodeLine{229 }
+\DoxyCodeLine{230 \textcolor{comment}{//> template implementation..}}
+\DoxyCodeLine{231 \textcolor{preprocessor}{\#include "{}t\_array.tcc"{}}}
+\DoxyCodeLine{232 }
+\DoxyCodeLine{233 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* end of include guard : T\_ARRAY\_HPP */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}
