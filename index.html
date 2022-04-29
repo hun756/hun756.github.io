@@ -3,26 +3,741 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
-    <title>Mehmet Github Web Page</title>
+    <title>Mehmet Portfolio</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg'>
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf'>
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff'>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">My Personal Portfolio</a>
 
-    <div class="container">
-        <div class="alert alert-success alert-dismissible d-flex align-items-center fade show">
-            <i class="bi-check-circle-fill"></i>
-            <strong class="mx-2">Hi There ! </strong> I am in Github Pages Now
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">Projects</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Home section -->
+
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start" id="home">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <div>
+                        <h1>I am a <span class="text-warning typed2">Software Developer</span></h1>
+                        <p class="lead my-4 custom">
+                            <span class="typedelem">
+
+                            </span>
+                        </p>
+                    </div>
+
+                    <button class="btn btn-primary btn-lg btn-spec">
+                        Hire Me
+                    </button>
+
+                </div>
+
+                <a href="#!">
+                    <img class="img-fluid d-none d-sm-block" width=750px" src="resources/13038.svg" />
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <!-- About us section -->
+    <section id="about-us" class="alt">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <img src="resources/IMG-20200125-WA0008.jpg" class="img-fluid" alt="About Me" width="400px">
+                </div>
+                <div class="col text-col">
+                    <h1>About Me</h1>
+                    <p>I am a 3rd year computer engineering student. I have worked
+                        on software development for many years. I am currently working
+                        on a platform to facilitate learning, where content is produced
+                        using gamification and visualization techniques.</p>
+
+                    <p></p>
+                    <button type="button" class="btn btn-dark btn-large">Let's meet</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About us section -->
+
+    <!-- Services -->
+    <section id="services" class="section-spacing inverse">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="section-title text-center">
+                        <h2 class="mb-5">What I Do</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-self-center">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="service-list text-center wow fadeIn p-5">
+                        <div class="icon">
+                            <i class="fa fa-paint-brush"></i>
+                        </div>
+                        <h4>Graphics Design</h4>
+                        <p>I have been working on vector graphics and svg technologies for many years.
+                            I can use Adobe Illustrator program well and I can perform animation works with simple After
+                            Effects.</p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <div class="service-list text-center wow fadeIn p-5">
+                        <div class="icon">
+                            <i class="fa fa-laptop"></i>
+                        </div>
+                        <h4>Web Development</h4>
+                        <p>I can use web technologies such as html, css, javascript, typescript, php. My web works are
+                            mostly on vanilla js.
+                            However, I have been doing some work on WebAssembly and javascript optimization lately.</p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <div class="service-list text-center wow fadeIn p-5">
+                        <div class="icon">
+                            <i class="fa fa-lightbulb"></i>
+                        </div>
+                        <h4>Application Development</h4>
+                        <p>I have experience with electron js in app building. Besides, I can use qt and wxwidgets
+                            libraries at a basic level.</p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <div class="service-list text-center wow fadeIn p-5">
+                        <div class="icon">
+                            <i class="fa fa-flask-vial"></i>
+                        </div>
+                        <h4>Software Testing</h4>
+                        <p>I have experimentation with catch and googletest frameworks for C++. I can use the mocha and
+                            gesture
+                            libraries well for javascript.</p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <div class="service-list text-center wow fadeIn p-5">
+                        <div class="icon">
+                            <i class="fa fa-gamepad"></i>
+                        </div>
+                        <h4>Game Development</h4>
+                        <p>I have some work on game development about unreal engine. I used qt and lottie animation
+                            frameworks in the cell-invader game I developed as a startup.
+                            Apart from that, I have used frameworks such as SFML, BabylonJs, Phaser before.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="section-title text-center">
+                    <h2 class="mb-5">My Skills</h2>
+                </div>
+                <!-- <h5 class="d-flex align-items-center mb-3">My Skills</h5> -->
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>C++</p>
+                            <div class="progress mb-3" style="height: 5px">
+                                <div class="progress-bar bg-primary" role="progressbar"
+                                    style="width: 70%; background-color: #BB57FF !important;" aria-valuenow="70"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p>Javascript</p>
+                            <div class="progress mb-3" style="height: 5px">
+                                <div class="progress-bar bg-danger" role="progressbar"
+                                    style="width: 72%; background-color: #804FE8 !important;" aria-valuenow="72"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p>Typescript</p>
+                            <div class="progress mb-3" style="height: 5px">
+                                <div class="progress-bar bg-success" role="progressbar"
+                                    style="width: 65%; background-color: #6C63FF !important;" aria-valuenow="65"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p>Html</p>
+                            <div class="progress mb-3" style="height: 5px">
+                                <div class="progress-bar bg-warning" role="progressbar"
+                                    style="width: 85%; background-color: #4F70E8 !important;" aria-valuenow="85"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p>Css</p>
+                            <div class="progress" style="height: 5px">
+                                <div class="progress-bar bg-info" role="progressbar"
+                                    style="width: 80%; background-color: #57A7FF !important;" aria-valuenow="80"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Git</p>
+                            <div class="progress mb-3" style="height: 5px">
+                                <div class="progress-bar bg-primary" role="progressbar"
+                                    style="width: 70%; background-color: #FEEE05 !important;" aria-valuenow="70"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p>Bootstrap</p>
+                            <div class="progress mb-3" style="height: 5px">
+                                <div class="progress-bar bg-danger" role="progressbar"
+                                    style="width: 60%; background-color: #E6C005 !important;" aria-valuenow="60"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p>Jquery</p>
+                            <div class="progress mb-3" style="height: 5px">
+                                <div class="progress-bar bg-success" role="progressbar"
+                                    style="width: 65%; background-color: #FDC012 !important;" aria-valuenow="65"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p>Node JS</p>
+                            <div class="progress mb-3" style="height: 5px">
+                                <div class="progress-bar bg-warning" role="progressbar"
+                                    style="width: 55%; background-color: #E69305 !important;" aria-valuenow="55"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p>SQL</p>
+                            <div class="progress" style="height: 5px">
+                                <div class="progress-bar bg-info" role="progressbar"
+                                    style="width: 45%; background-color: #FE8405 !important;" aria-valuenow="45"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div id="skills">
+            <!-- Skills -->
+            <div class="section-title text-center">
+                <h2 class="mb-5">Technologies I have worked on</h2>
+            </div>
+            <div class="skills-list row">
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="https://www.gitkraken.com/" target="_blank">
+                        <img src="resources/tech_uses/gitkraken-logo-dark-sq.png" alt="Git kraken logo">
+                    </a>
+                </div>
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="htts://www.github.com/" target="_blank">
+                        <img src="resources/tech_uses/GitHub-Mark.png" alt="Github logo">
+                    </a>
+                </div>
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="https://git-scm.com/" target="_blank">
+                        <img src="resources/tech_uses/gitscm.jpg" alt="Git logo">
+                    </a>
+                </div>
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="https://getbootstrap.com/" target="_blank">
+                        <img src="resources/tech_uses/bootstrap4.png" alt="Bootstrap logo">
+                    </a>
+                </div>
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="https://jquery.com/" target="_blank">
+                        <img src="resources/tech_uses/jquery-logo.jpg" alt="JQuery logo">
+                    </a>
+                </div>
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="https://exchange.adobe.com/creativecloud.details.12557.bodymovin.html" target="_blank">
+                        <img src="resources/tech_uses/bodymovin.png" alt="BodyMovin logo">
+                    </a>
+                </div>
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="https://lottiefiles.com/" target="_blank">
+                        <img src="resources/tech_uses/lottie.png" alt="Lottie Files logo">
+                    </a>
+                </div>
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="https://www.adobe.com/tr/products/illustrator.html" target="_blank">
+                        <img src="resources/tech_uses/Adobe_Illustrator-Logo.wine.png" alt="Adoba Illustrator logo">
+                    </a>
+                </div>
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="https://www.heroku.com/" target="_blank">
+                        <img src="resources/tech_uses/heroku8748.jpg" alt="Heroku logo">
+                    </a>
+                </div>
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="https://www.boost.org/" target="_blank">
+                        <img src="resources/tech_uses/pre-boost.jpg" alt="Boost logo">
+                    </a>
+                </div>
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="https://www.sfml-dev.org/" target="_blank">
+                        <img src="resources/tech_uses/1200px-SFML2.svg.png" alt="SFML logo">
+                    </a>
+                </div>
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="https://google.github.io/googletest/" target="_blank">
+                        <img src="resources/tech_uses/google_test.png" alt="GoogleTest logo">
+                    </a>
+                </div>
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="https://www.codeigniter.com/" target="_blank">
+                        <img src="resources/tech_uses/651_codeigniter.jpg" alt="Codeigniter logo">
+                    </a>
+                </div>
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="https://nodejs.org/en/" target="_blank">
+                        <img src="resources/tech_uses/1280px-Node.js_logo.png" alt="NodeJs logo">
+                    </a>
+                </div>
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="https://laravel.com/" target="_blank">
+                        <img src="resources/tech_uses/laravel-ar21.png" alt="laravel logo">
+                    </a>
+                </div>
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="https://www.assemblyscript.org/" target="_blank">
+                        <img src="resources/tech_uses/assemblyscript-logo.png" alt="AssemblyScript logo">
+                    </a>
+                </div>
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="https://www.techsmith.com/video-editor.html" target="_blank">
+                        <img src="resources/tech_uses/camtasia_logo.png" alt="Camtasia logo">
+                    </a>
+                </div>
+            </div>
+        </div> <!-- End of Skills -->
+    </section>
+
+    <section>
+        <div class="container">
+            <!-- Skills -->
+            <div class="section-title text-center">
+                <h2 class="mb-5">My Example Projects</h2>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./resources/projects_gallery/cell_invader.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cell Invader</h5>
+                            <p class="card-text">Strategy development game about cell wars.</p>
+                            <button type="button" class="btn btn-sm btn-primary btn-spec" data-toggle="modal"
+                                data-target="#cell">Explore</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./resources/projects_gallery/education_platform.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Education Platform</h5>
+                            <p class="card-text">A server based on programming, tech, gaming, cool resources and
+                                updates</p>
+                            <button type="button" class="btn btn-sm btn-primary btn-spec" data-toggle="modal"
+                                data-target="#education">Explore</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./resources/projects_gallery/meta_book.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Metabook</h5>
+                            <p class="card-text">An advanced book project developed to assist interactive learning.</p>
+                            <button type="button" class="btn btn-sm btn-primary btn-spec" data-toggle="modal"
+                                data-target="#meta">Explore</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./resources/projects_gallery/ef_framework.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">EF Framework</h5>
+                            <p class="card-text">This is a fast and very minimal php framework..</p>
+                            <button type="button" onclick="location.href='https://github.com/hun756/ef_framework';"
+                                class="btn btn-sm btn-primary btn-spec">Explore</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./resources/projects_gallery/javascript_games_01.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Javascript Games</h5>
+                            <p class="card-text">Games I designed with Javascript
+                                updates</p>
+                            <button type="button"
+                                onclick="location.href='https://github.com/hun756/Javascript4OperationMathGame';"
+                                class="btn btn-sm btn-primary btn-spec">Explore</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./resources/AR2f1lH.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Minsk TS Compiler</h5>
+                            <p class="card-text">Language compiler with a Typescript-like syntax.</p>
+                            <button type="button" onclick="location.href='https://github.com/hun756/Compiler-in-TS';"
+                                class="btn btn-sm btn-primary btn-spec">Explore</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./resources/projects_gallery/cquery.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CQuery</h5>
+                            <p class="card-text"></p>
+                            <button type="button" onclick="location.href='https://github.com/hun756/CQuery';"
+                                class="btn btn-sm btn-primary btn-spec">Explore</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <!-- Modals for cell invader -->
+    <div class="modal fade" id="cell" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog model-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Cell Invader</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <p>
+                            Cell Invader is a strategy development game about cell development and the battles of cells
+                            with each other.
+                            The game is played multi-platform and multiplayer. He received the first prize in the
+                            Startup Weekend - 2019 competition.
+                        </p>
+                        <p>
+                            Tegnologies : Qt (QT quick), Javascript, Lottie, Bodymovin
+                        </p>
+                        <p>
+                            Images:
+                        </p>
+                        <img class="img-fluid d-none d-sm-block" width=750px"
+                            src="resources/projects_gallery/cell01.png" /> <br>
+                        <img class="img-fluid d-none d-sm-block" width=750px"
+                            src="resources/projects_gallery/cell02.png" /> <br>
+                        <img class="img-fluid d-none d-sm-block" width=750px"
+                            src="resources/projects_gallery/cell03.png" /> <br>
+                        <img class="img-fluid d-none d-sm-block" width=750px"
+                            src="resources/projects_gallery/cell04.png" /> <br>
+                        <img class="img-fluid d-none d-sm-block" width=750px"
+                            src="resources/projects_gallery/cell05.png" /> <br>
+                        <img class="img-fluid d-none d-sm-block" width=750px"
+                            src="resources/projects_gallery/cell06.png" /> <br>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="education">Close</button>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- modals for educaiton platform -->
+    <div class="modal fade" id="education" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog model-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Educational Platform</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <p>
+                            This platform; By focusing on visualization of educational content, related content can be
+                            used as games, animations, gamification, etc.
+                            It will be in a way that will enable the creation of high-quality and easy-to-learn content
+                            in the field of education.
+                        </p>
+                        <p>
+                            Our main goals in this project are;
+                        <ul>
+                            <li>Contributing to the digitalization of educational content,</li>
+                            <li>To contribute to the easier, faster and permanent learning process of people by
+                                providing visualization of educational content.</li>
+                            <li>Contents animations, gamifications, etc. and to increase efficiency by making the boring
+                                educational process more interactive in this way.</li>
+                            <li>Creating a new developer/creator ecosystem and increasing educational content in the
+                                game and graphics industry.</li>
+                        </ul>
+                        </p>
+                        <p>
+                            Some images:
+                        </p>
+                        <p>
+                            <img class="img-fluid d-none d-sm-block" width=750px"
+                                src="resources/projects_gallery/edu01.png" />
+                            <br>
+                            <img class="img-fluid d-none d-sm-block" width=750px"
+                                src="resources/projects_gallery/edu02.png" />
+                        </p>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals for metbook -->
+    <div class="modal fade" id="meta" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog model-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Metabook</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <p>
+                            This project is an advanced book project in which parts such as video animation etc. can be
+                            created interactively, in which design developments are made in the book, in order to
+                            further increase the efficiency of the books. The project is created from html divs designed
+                            in A4 page size, this page is used by chromium browser by transferring it to the desktop
+                            application.
+                        </p>
+                        <p>
+                            Note: Application demo will be added
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modals -->
+
+
+    <section class="gallery">
+        <!-- Page Content -->
+        <div class="container page-top">
+            <div class="section-title text-center">
+                <h2 class="mb-5">Gallery</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="resources/img/galery/fn_gallery_01.jpeg" class="fancybox" rel="ligthbox">
+                        <img src="resources/img/galery/fn_gallery_01.jpeg" class="zoom img-fluid " alt="">
+
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="resources/img/galery/fn_gallery_02.jpg" class="fancybox" rel="ligthbox">
+                        <img src="resources/img/galery/fn_gallery_02.jpg" class="zoom img-fluid" alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="resources/img/galery/fn_gallery_03.jpg" class="fancybox" rel="ligthbox">
+                        <img src="resources/img/galery/fn_gallery_03.jpg" class="zoom img-fluid " alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="resources/img/galery/fn_gallery_04.jpg" class="fancybox" rel="ligthbox">
+                        <img src="resources/img/galery/fn_gallery_04.jpg" class="zoom img-fluid " alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="resources/img/galery/fn_gallery_05.jpg" class="fancybox" rel="ligthbox">
+                        <img src="resources/img/galery/fn_gallery_05.jpg" class="zoom img-fluid " alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="resources/img/galery/fn_gallery_06.jpg" class="fancybox" rel="ligthbox">
+                        <img src="resources/img/galery/fn_gallery_06.jpg" class="zoom img-fluid " alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="resources/img/galery/fn_gallery_07.jpg" class="fancybox" rel="ligthbox">
+                        <img src="resources/img/galery/fn_gallery_07.jpg" class="zoom img-fluid " alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="resources/img/galery/fn_gallery_09.jpg" class="fancybox" rel="ligthbox">
+                        <img src="resources/img/galery/fn_gallery_09.jpg" class="zoom img-fluid " alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="resources/img/galery/fn_gallery_10.jpg" class="fancybox" rel="ligthbox">
+                        <img src="resources/img/galery/fn_gallery_10.jpg" class="zoom img-fluid " alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="resources/img/galery/fn_gallery_11.jpg" class="fancybox" rel="ligthbox">
+                        <img src="resources/img/galery/fn_gallery_11.jpg" class="zoom img-fluid " alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="resources/img/galery/fn_gallery_12.jpg" class="fancybox" rel="ligthbox">
+                        <img src="resources/img/galery/fn_gallery_12.jpg" class="zoom img-fluid " alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="resources/img/galery/fn_gallery_13.jpg" class="fancybox" rel="ligthbox">
+                        <img src="resources/img/galery/fn_gallery_13.jpg" class="zoom img-fluid " alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="resources/img/galery/fn_gallery_14.jpg" class="fancybox" rel="ligthbox">
+                        <img src="resources/img/galery/fn_gallery_14.jpg" class="zoom img-fluid " alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="resources/img/galery/fn_gallery_15.jpg" class="fancybox" rel="ligthbox">
+                        <img src="resources/img/galery/fn_gallery_15.jpg" class="zoom img-fluid " alt="">
+                    </a>
+                </div>
+            </div>
+    </section>
+
+
+    <footer class="bg-dark text-center text-white">
+        <div class="section-title text-center">
+            <h2 class="pt-2">Contact Me</h2>
+        </div>
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Github -->
+                <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://www.github.com/hun756"
+                    role="button"><i class="fab fa-github"></i></a>
+
+                <!-- Linkedin -->
+                <a target="_blank" class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.linkedin.com/in/msekemen/" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+                <!-- Instagram -->
+                <a target="_blank" class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.instagram.com/ms_ekemen" role="button"><i class="fab fa-instagram"></i></a>
+
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fa-brands fa-facebook"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+    </footer>
+
+    <!-- JavaScript and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,287 @@
+html {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+@media(min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+
+body {
+  display: block;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+section.alt {
+  background-color: #f0f8ff;
+}
+
+section h1 {
+  /* text-transform: uppercase; */
+  font-weight: 900;
+  color: #6c63ff;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+button {
+  max-width: 50%;
+  border-radius: 50px !important;
+}
+
+.btn-spec {
+  background-color: #4E45FF;
+}
+
+#hero .col {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+#hero .img-col {
+  justify-content: flex-end;
+  margin-top: 100px;
+}
+
+#hero img {
+  max-width: 130% !important;
+  width: 130%;
+}
+
+#hero .card {
+  box-shadow: 11px 7px 16px #f9f9f9;
+  border: 0;
+  text-align: center;
+}
+
+#hero .icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.ido_margin {
+  margin-bottom: 20px;
+}
+
+.service-info {
+  width: 100%;
+  float: left;
+  height: auto;
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.service-info h5 {
+  font-weight: 300;
+}
+
+
+.service-list {
+  width: 100%;
+  float: left;
+  height: auto;
+  margin: 0 0 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
+}
+
+.service-list h4 {
+  text-transform: capitalize;
+}
+
+.service-list p {
+  margin: 0;
+}
+
+.service-list .icon {
+  width: 100%;
+  float: left;
+  height: auto;
+  margin: 0 0 20px;
+}
+
+.service-list .fa {
+  width: 85px;
+  line-height: 85px;
+  background: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 28px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.service-list h3 {
+  text-transform: capitalize;
+}
+
+.service-list:hover .icon .fa {
+  background: #FDC012;
+  color: #fff;
+}
+
+#services .col-xs-12:nth-last-child(-n+3) .service-list {
+  margin: 0;
+}
+
+.section-spacing.pbtop-none {
+  padding-top: 0;
+}
+
+.service-info {
+  width: 100%;
+  float: left;
+  height: auto;
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.service-info h5 {
+  font-weight: 300;
+}
+
+.service-info .fa {
+  width: 85px;
+  line-height: 85px;
+  background: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 28px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  margin: 0 0 25px;
+}
+
+.service-info:hover .fa {
+  background: #ff8500;
+  color: #fff;
+}
+
+.service-info .counter {
+  display: block;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0 0px;
+  font-weight: 600;
+}
+
+
+#skills .skills-list,
+#interests .interests-list {
+  width: 80%;
+  margin: auto;
+  padding: 25px 0;
+  list-style: none;
+}
+
+#interests .interests-list {
+  padding-bottom: 50px;
+}
+
+#skills .skills-list .interest,
+#interests .interests-list .interest {
+  text-align: center;
+}
+
+#skills .skills-list .interest a img,
+#interests .interests-list .interest a img {
+  max-width: 75%;
+  max-height: 75%;
+  margin: 5px;
+  padding: 5px;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+#demo {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.green {
+  background-color: #6fb936;
+}
+
+.thumb {
+  margin-bottom: 30px;
+}
+
+.page-top {
+  margin-top: 85px;
+}
+
+
+img.zoom {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+}
+
+
+.transition {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.modal-header {
+
+  border-bottom: none;
+}
+
+.modal-title {
+  color: #000;
+}
+
+.modal-footer {
+  display: none;
+}
+
+.gallery {
+  padding: 0;
+  margin-top: -50px;
+  margin-bottom: 50px ;
+}
