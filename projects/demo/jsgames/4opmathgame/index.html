@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main_min.css">
+    <title>Javascript Math Game</title>
+</head>
+
+<body>
+    <!-- The Game -->
+    <div class="math-games">
+        <span>
+            <span class="blue"></span> <span class="op"></span> <span class="red"></span> = ?
+        </span>
+        <input id="inputElem" type="text" class="items" placeholder="Type your answer " required>
+        <button id="chck-btn" class="items">Check</button>
+        <button id="reload" class="items">&#x21bb;</button>
+    </div>
+
+    <!-- Modal for Wrong And Right Answers -->
+    <div id="modal" class="modal-container">
+        <span class="close">&times;</span>
+        <p class="theAnswer">The Answer</p>
+    </div>
+
+    <script src="main_min.js">Check</script>
+</body>
+
+</html>
