@@ -283,5 +283,103 @@ img.zoom {
 .gallery {
   padding: 0;
   margin-top: -50px;
-  margin-bottom: 50px ;
+  margin-bottom: 50px;
+}
+
+
+section.hero p {
+  margin: 20px 0;
+}
+
+section.hero .CTA {
+  margin-top: 40px;
+}
+
+section.hero .CTA a {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #777;
+  line-height: 1.5rem;
+}
+
+.github-cards {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 900px;
+}
+
+.github-card {
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 20px;
+  color: #555;
+  text-decoration: none;
+  font-size: 13px;
+  flex: 1;
+  min-width: 350px;
+}
+
+.github-card>h3 {
+  margin-top: 0;
+  color: #4078c0;
+  font-size: 15px;
+}
+
+.github-card__meta {
+  margin-right: 20px;
+}
+
+.github-card__meta>i {
+  font-size: 16px;
+}
+
+.github-card__language-icon {
+  font-size: 16pt;
+}
+
+.bg-gray {
+  background: #f5f5f5;
+}
+
+#hero {
+  padding: 150px;
+}
+
+.bd-none {
+  border: none !important;
+}
+
+.btn {
+  border-radius: 50px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+
+.btn-shadow {
+  -webkit-box-shadow: 0 10px 20px rgba(109, 109, 109, 0.16) !important;
+  box-shadow: 0 10px 20px rgba(109, 109, 109, 0.16) !important;
+}
+
+.btn-gradient,
+section.browser .nav-tabs span.number {
+  background-color: #5989e5;
+  background-image: -webkit-gradient(linear, left top, right top, from(#5989e5), to(#37cfdc));
+  background-image: linear-gradient(to right, #5989e5, #37cfdc);
+  border: none !important;
+  text-transform: uppercase;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.3s !important;
+  transition: all 0.3s !important;
 }

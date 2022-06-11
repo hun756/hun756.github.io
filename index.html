@@ -183,6 +183,24 @@
         </div>
     </section>
 
+    <section id="hero" class="hero hero-home bg-gray">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-lg-6 text order-2 order-lg-1">
+                    <h1>CoderBot &mdash; is&nbsp;available now. Try it.</h1>
+                    <p class="hero-text">CoderBot was created for software companies and software groups to use discord more effectively.</p>
+                    <div class="CTA"><a href="#"
+                            class="btn btn-primary btn-shadow btn-gradient link-scroll">Discover More</a><a href="#"
+                            class="btn btn-outline-primary">See Plans</a></div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2"><iframe width="632" height="350"
+                        src="https://www.youtube.com/embed/OVU7YR9bISM" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+            </div>
+        </div>
+    </section>
+
     <section>
         <div class="container">
             <div class="row">
@@ -359,6 +377,26 @@
                         <img src="resources/tech_uses/camtasia_logo.png" alt="Camtasia logo">
                     </a>
                 </div>
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="https://cmake.org/" target="_blank">
+                        <img src="resources/tech_uses/cmake.png" alt="Camtasia logo">
+                    </a>
+                </div>
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="https://discord.js.org/" target="_blank">
+                        <img src="resources/tech_uses/discordjs.png" alt="Camtasia logo">
+                    </a>
+                </div>
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="https://trello.com/" target="_blank">
+                        <img src="resources/tech_uses/trello.png" alt="Camtasia logo">
+                    </a>
+                </div>
+                <div class="interest col-xs-6 col-sm-4 col-md-2">
+                    <a href="https://doxygen.nl/" target="_blank">
+                        <img src="resources/tech_uses/doygen_logo.jpg" alt="Camtasia logo">
+                    </a>
+                </div>
             </div>
         </div> <!-- End of Skills -->
     </section>
@@ -376,7 +414,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Cell Invader</h5>
                             <p class="card-text">Strategy development game about cell wars.</p>
-                            <button type="button" class="btn btn-sm btn-primary btn-spec" data-toggle="modal"
+                            <button type="button" class="btn btn-sm btn-primary bd-none btn-spec" data-toggle="modal"
                                 data-target="#cell">Explore</button>
                         </div>
                     </div>
@@ -388,7 +426,7 @@
                             <h5 class="card-title">Education Platform</h5>
                             <p class="card-text">A server based on programming, tech, gaming, cool resources and
                                 updates</p>
-                            <button type="button" class="btn btn-sm btn-primary btn-spec" data-toggle="modal"
+                            <button type="button" class="btn btn-sm btn-primary bd-none btn-spec" data-toggle="modal"
                                 data-target="#education">Explore</button>
                         </div>
                     </div>
@@ -399,7 +437,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Metabook</h5>
                             <p class="card-text">An advanced book project developed to assist interactive learning.</p>
-                            <button type="button" class="btn btn-sm btn-primary btn-spec" data-toggle="modal"
+                            <button type="button" class="btn btn-sm btn-primary bd-none btn-spec" data-toggle="modal"
                                 data-target="#meta">Explore</button>
                         </div>
                     </div>
@@ -415,7 +453,7 @@
                             <h5 class="card-title">EF Framework</h5>
                             <p class="card-text">This is a fast and very minimal php framework..</p>
                             <button type="button" onclick="location.href='https://github.com/hun756/ef_framework';"
-                                class="btn btn-sm btn-primary btn-spec">Explore</button>
+                                class="btn btn-sm btn-primary bd-none btn-spec">Explore</button>
                         </div>
                     </div>
                 </div>
@@ -428,10 +466,11 @@
                                 updates</p>
                             <button type="button"
                                 onclick="location.href='https://github.com/hun756/Javascript4OperationMathGame';"
-                                class="btn btn-sm btn-primary btn-spec">Explore</button>
+                                class="btn btn-sm btn-primary bd-none btn-spec">Explore</button>
                             <button type="button"
                                 onclick="location.href='https://hun756.github.io/projects/demo/jsgames/4opmathgame/';"
-                                class="btn btn-sm btn-primary btn-spec" style="background-color: #FE8405; border: none;">Demo</button>
+                                class="btn btn-sm btn-primary btn-spec"
+                                style="background-color: #FE8405; border: none;">Demo</button>
                         </div>
                     </div>
                 </div>
@@ -442,7 +481,7 @@
                             <h5 class="card-title">Minsk TS Compiler</h5>
                             <p class="card-text">Language compiler with a Typescript-like syntax.</p>
                             <button type="button" onclick="location.href='https://github.com/hun756/Compiler-in-TS';"
-                                class="btn btn-sm btn-primary btn-spec">Explore</button>
+                                class="btn btn-sm btn-primary bd-none btn-spec">Explore</button>
                         </div>
                     </div>
                 </div>
@@ -457,7 +496,7 @@
                             <h5 class="card-title">CQuery</h5>
                             <p class="card-text">Jquery library rewritten in C++/Cheerp </p>
                             <button type="button" onclick="location.href='https://github.com/hun756/CQuery';"
-                                class="btn btn-sm btn-primary btn-spec">Explore</button>
+                                class="btn btn-sm btn-primary bd-none btn-spec">Explore</button>
                         </div>
                     </div>
                 </div>
@@ -468,24 +507,36 @@
                             <h5 class="card-title">X Lang</h5>
                             <p class="card-text">Programming language written using nearley and moo.js </p>
                             <button type="button" onclick="location.href='https://github.com/hun756/xlang';"
-                                class="btn btn-sm btn-primary btn-spec">Explore</button>
+                                class="btn btn-sm btn-primary bd-none btn-spec">Explore</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://raw.githubusercontent.com/hun756/Cheerp-Pong/master/resource/resouce.gif" class="card-img-top" alt="...">
+                        <img src="https://raw.githubusercontent.com/hun756/Cheerp-Pong/master/resource/resouce.gif"
+                            class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Cheerp Pong</h5>
                             <p class="card-text">Ported classic pong game to javascript + WebAssembly </p>
                             <button type="button" onclick="location.href='https://github.com/hun756/Cheerp-Pong';"
-                                class="btn btn-sm btn-primary btn-spec">Explore</button>
+                                class="btn btn-sm btn-primary bd-none btn-spec">Explore</button>
                             <button type="button"
                                 onclick="location.href='https://hun756.github.io/projects/demo/cheerppong/';"
-                                class="btn btn-sm btn-primary btn-spec" style="background-color: #FE8405; border: none;">Demo</button>
+                                class="btn btn-sm btn-primary btn-spec"
+                                style="background-color: #FE8405; border: none;">Demo</button>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-title text-center">
+            <h2 class="mb-5">Example Github Repositories</h2>
+        </div>
+        <div class="row mb-5 justify-content-center">
+            <div class="github-cards">
             </div>
         </div>
     </section>
